@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	/* 这个属性是告诉浏览器：你想要设置的边框和内边距的值是包含在总宽高内的 */
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+*:focus {
+	outline: none;
+}
+
+.main {
+	width: 500px;
+	height: 400px;
+	margin: 100px auto;
+}
+
+
+#search {
+	width: 500px;
+	height: 40px;
+	border: none;
+	/*取消默认的边框以设置自定义边框*/
+	outline: none;
+	/*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+	font-size: 16px;
+	/*设置提示文字的字体大小*/
+	color: rgb(112, 112, 112);
+	/*设置提示文字颜色*/
+	margin-left: 50px;
+	/*给输入框与左边放大镜图标10px的间距*/
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.searchbar {
+	border: rgb(218, 218, 218) solid 1px;
+	border-radius: 2em;
+	/*左右边框为半圆*/
+	width: 500px;
+	height: 42px;
+	box-shadow: 0px 0px 5px rgb(212, 212, 212);
+	margin-right: 5px;
+	padding: 10px 5px 5px 14px;
+}
+
+.mg {
+	vertical-align: middle;
+	width: 30px;
+	margin-left: 20px;
+}
+
+/*  result.jsp */
+.nav {
+	width: 80px;
+	height: 80px;
+	vertical-align: middle;
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.nav img{
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+
+.newmain {
+	width: 60%;
+	margin-left: 155px;
+	margin-top: 30px;
+}
+
+h3 {
+	margin: 0px auto;
+}
+
+
+.newsnum {
+	color: red;
+}
+
+.item {
+	padding-bottom: 0px;
+	border-right: 1px solid #cccccc;
+	overflow: hidden;
+}
+
+/* .item a:link, .item a:visited {
+	color: #12009e;
+    text-decoration: none; 
+} */
+
+.item p a:link,
+.item p a:visited {
+	color: #025616;
+	text-decoration: none;
+}
+
+/* .item span {
+	color: red;
+}
+ */
+/*paging*/
+.paging {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.paging ul {
+	list-style: none;
+	height: 20px;
+}
+
+.paging ul li {
+	float: left;
+	padding-left: 30px;
+}
+
+.paging hr {
+	height: 1px;
+	margin: 0;
+	width: 75%;
+}
+
+.line-limit-length {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin:0 0;
+}
+
+.full-line-limit-length {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	margin:0 0;
+}
+
+/* 页脚 */
+.footer {
+	margin-top: 260px;
+	color: #1b7bf2;
+	margin-left: 8%
+}
+
+.footer ul {
+	width: 80%;
+	margin: 0 auto;
+	margin-left: 25%;
+}
+
+.footer ul li {
+	display: inline-block;
+}
+
+/*footerinfo*/
+.footerinfo {
+	margin: 5px auto;
+	width: 40%;
+}
